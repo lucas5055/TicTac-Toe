@@ -1,0 +1,38 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build with g++",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-g",
+        "-DSFML_STATIC",
+        "-IC:\\SFML\\include",
+        "${file}",
+        "-LC:\\SFML\\lib",
+        "-lsfml-graphics-s-d",
+        "-lsfml-window-s-d",
+        "-lsfml-system-s-d",
+        "-lopengl32",
+        "-lfreetype",
+        "-lwinmm",
+        "-lgdi32",
+        "-mwindows",
+        "-static-libgcc",
+        "-static-libstdc++",
+        "-static",
+        "-lwinpthread",
+        "-o",
+        "${fileDirname}\\${fileBasenameNoExtension}.exe"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": [
+        "$gcc"
+      ]
+    }
+  ]
+}
