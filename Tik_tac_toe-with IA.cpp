@@ -61,7 +61,7 @@ int main()
     {
         Rectangle.setSize({size, width});
         Rectangle.setOrigin(Rectangle.getGeometricCenter());
-        Rectangle.setFillColor(sf::Color::Green);
+        Rectangle.setFillColor(sf::Color::White);
         Rectangle.setPosition({position_x, position_y});
         Rectangle.setRotation(sf::degrees(45.f));
         window.draw(Rectangle);
@@ -75,7 +75,7 @@ int main()
         Circle.setRadius(size / 2);
         Circle.setOrigin(Circle.getGeometricCenter());
         Circle.setFillColor(sf::Color::Transparent);
-        Circle.setOutlineColor(sf::Color::Blue);
+        Circle.setOutlineColor(sf::Color::White);
         Circle.setOutlineThickness(-width);
         Circle.setPosition({position_x, position_y});
         window.draw(Circle);
